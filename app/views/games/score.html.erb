@@ -1,0 +1,8 @@
+
+<p> Your word: <%= params[:word].capitalize %> </p>
+<p> <%= @message %> </p>
+<p> Score: <%= @score %></p>
+
+<%= link_to "Try another word", new_path %>
+
+<p> Total score: <%= session[:score] %> </p>
